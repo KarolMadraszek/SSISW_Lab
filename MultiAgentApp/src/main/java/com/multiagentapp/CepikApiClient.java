@@ -3,6 +3,11 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -18,9 +23,29 @@ public class CepikApiClient {
                 wojewodztwo, dataOd, dataDo, limit
         );
 
-        HttpClient client = HttpClient.newHttpClient();
+        TrustManager[] trustAllCerts = new TrustManager[]{
+                new X509TrustManager() {
+                    public X509Certificate[] getAcceptedIssuers() { return null; }
+                    public void checkClientTrusted(X509Certificate[] certs, String authType) { }
+                    public void checkServerTrusted(X509Certificate[] certs, String authType) { }
+                }
+        };
+
+        HttpClient client = null;
+        try {
+            SSLContext sslContext = SSLContext.getInstance("TLS");
+            sslContext.init(null, trustAllCerts, new SecureRandom());
+            client = HttpClient.newBuilder()
+                    .sslContext(sslContext)
+                    .build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
+                .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
                 .GET()
                 .build();
 
@@ -31,7 +56,7 @@ public class CepikApiClient {
                 ObjectMapper mapper = new ObjectMapper();
                 JsonNode rootNode = mapper.readTree(response.body());
                 JsonNode dataArray = rootNode.path("data");
-                System.out.println("Pobrano " + dataArray.size() + "pojazdów z API.\n");
+                System.out.println("Pobrano " + dataArray.size() + " pojazdów z API.\n");
 
                 for (JsonNode node : dataArray) {
                     JsonNode attributes = node.path("attributes");
