@@ -23,10 +23,73 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0003482220326865" />
+      <entry key="MS500" value="1.3492269912141812" />
+      <entry key="S2" value="2.2919745776190945" />
+      <entry key="S5" value="2.6791748135462514" />
+      <entry key="S10" value="2.8325633962383394" />
+      <entry key="S30" value="2.9425496274477316" />
+      <entry key="S60" value="2.9710650151104745" />
+      <entry key="M2" value="2.9854796732144977" />
+      <entry key="M5" value="2.9941791394781934" />
+      <entry key="M10" value="2.997087443960358" />
+      <entry key="M15" value="2.998057823270835" />
+      <entry key="M30" value="2.9990286752071365" />
+      <entry key="H1" value="2.9995142784820725" />
+      <entry key="H2" value="2.999757124458859" />
+      <entry key="H4" value="2.9998785585336596" />
+      <entry key="D1" value="2.999979759242289" />
+      <entry key="W1" value="2.999997108450613" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9331370729444939" />
+      <entry key="MS500" value="1.1460195377394538" />
+      <entry key="S2" value="1.6990526748536348" />
+      <entry key="S5" value="2.176793890125898" />
+      <entry key="S10" value="2.499687704945297" />
+      <entry key="S30" value="2.8074378416413595" />
+      <entry key="S60" value="2.9000168440960716" />
+      <entry key="M2" value="2.9490425671562814" />
+      <entry key="M5" value="2.9793798515843806" />
+      <entry key="M10" value="2.989649940147181" />
+      <entry key="M15" value="2.993091040265924" />
+      <entry key="M30" value="2.996541051652172" />
+      <entry key="H1" value="2.998269407097058" />
+      <entry key="H2" value="2.99913442366491" />
+      <entry key="H4" value="2.9995671418363643" />
+      <entry key="D1" value="2.9999278472489097" />
+      <entry key="W1" value="2.9999896922259683" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3KcyaNtYxOjrufJ5Ayy1T0dD3dj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,15 +97,31 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CepikApi.executor": "Run",
     "Application.CepikApiClient.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Magisterka/SSISW_Lab/MultiAgentApp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.general"
+    "settings.editor.selected.configurable": "preferences.general",
+    "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -65,6 +144,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,5 +162,8 @@
       <updated>1791871215821</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

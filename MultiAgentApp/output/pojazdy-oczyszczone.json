@@ -1,0 +1,965 @@
+{
+  "zrodlo" : "CEPiK",
+  "dataPrzetwarzania" : "2026-10-25T22:13:31.457169400",
+  "pojazdy" : [ {
+    "id" : "5366335835140143",
+    "producent" : null,
+    "marka" : "JEEP",
+    "model" : "GRAND CHEROKEE",
+    "rokProdukcji" : 2023,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "88928527603343",
+    "producent" : null,
+    "marka" : "VOLVO",
+    "model" : "XC40",
+    "rokProdukcji" : 2020,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8507067072799459",
+    "producent" : null,
+    "marka" : "BMW",
+    "model" : "318D",
+    "rokProdukcji" : 2013,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3305466962118764",
+    "producent" : null,
+    "marka" : "YAMAHA",
+    "model" : "VP250",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6146907242581367",
+    "producent" : null,
+    "marka" : "YAMAHA",
+    "model" : "XV1900",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "222714993450205",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "KUGA",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "2348797884163051",
+    "producent" : null,
+    "marka" : "HYUNDAI",
+    "model" : "I20",
+    "rokProdukcji" : 2021,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1867972283508517",
+    "producent" : null,
+    "marka" : "ŻAK",
+    "model" : "50C18",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "AUTOBUS",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3457234163840816",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "TOURNEO CUSTOM",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1134445233743302",
+    "producent" : null,
+    "marka" : "BMW",
+    "model" : "X3",
+    "rokProdukcji" : 2021,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6741738760552161",
+    "producent" : null,
+    "marka" : "HOBBY",
+    "model" : "440",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "PRZYCZEPA SPECJALNA",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : null,
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4056715437744157",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "KUGA",
+    "rokProdukcji" : 2017,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3814019713266542",
+    "producent" : null,
+    "marka" : "SKODA",
+    "model" : "KODIAQ",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3814019713266520",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "CEED",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "2437112450441819",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "ATLAS",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7626640819097459",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "KUGA",
+    "rokProdukcji" : 2017,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5089608126164454",
+    "producent" : null,
+    "marka" : "MG",
+    "model" : "MG HS",
+    "rokProdukcji" : 2022,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1414139413080497",
+    "producent" : null,
+    "marka" : "MG",
+    "model" : "HS",
+    "rokProdukcji" : 2023,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3075862314425619",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "TIGUAN",
+    "rokProdukcji" : 2009,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8373848406936655",
+    "producent" : null,
+    "marka" : "NISSAN",
+    "model" : "QASHQAI",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6276583209579043",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "RANGER",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "158683511468903",
+    "producent" : null,
+    "marka" : "HONDA",
+    "model" : "CMX500A",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8604229064288611",
+    "producent" : null,
+    "marka" : "HONDA",
+    "model" : "CBF125NA",
+    "rokProdukcji" : 2019,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "2131481036595996",
+    "producent" : null,
+    "marka" : "RENAULT",
+    "model" : "MASTER",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6560621576778289",
+    "producent" : null,
+    "marka" : "CITROEN",
+    "model" : "BERLINGO",
+    "rokProdukcji" : 2012,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8642375653689571",
+    "producent" : null,
+    "marka" : "RENAULT",
+    "model" : "CLIO",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1981848580667964",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "FOCUS",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8337032208461510",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "SPORTAGE",
+    "rokProdukcji" : 2013,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5766144774300249",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "CARENS",
+    "rokProdukcji" : 2013,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1807280684485999",
+    "producent" : null,
+    "marka" : "SKODA",
+    "model" : "RAPID",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1273452704554704",
+    "producent" : null,
+    "marka" : "JEEP",
+    "model" : "GRAND CHEROKEE",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3102243293542249",
+    "producent" : null,
+    "marka" : "HYUNDAI",
+    "model" : "IX35",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "158683511468925",
+    "producent" : null,
+    "marka" : "MERCEDES-BENZ",
+    "model" : "VITO",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7441355344607741",
+    "producent" : null,
+    "marka" : "YAMAHA",
+    "model" : "XTZ690",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5016029523318267",
+    "producent" : null,
+    "marka" : "MERCEDES-BENZ",
+    "model" : "SPRINTER",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "SAMOCHÓD SPECJALNY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5552029703176284",
+    "producent" : null,
+    "marka" : "OPEL",
+    "model" : "ASTRA",
+    "rokProdukcji" : 2016,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4023374902013194",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "GOLF",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7441355344607747",
+    "producent" : null,
+    "marka" : "BMW",
+    "model" : "X1 SDRIVE20I",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7984683626907466",
+    "producent" : null,
+    "marka" : "RENAULT",
+    "model" : "KOLEOS",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "791091132407893",
+    "producent" : null,
+    "marka" : "HYUNDAI",
+    "model" : "IX35",
+    "rokProdukcji" : 2015,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8992517785135174",
+    "producent" : null,
+    "marka" : "DODGE",
+    "model" : "DURANGO R/T",
+    "rokProdukcji" : 2023,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8466554808929743",
+    "producent" : null,
+    "marka" : "SEAT",
+    "model" : "IBIZA 1.4 16V",
+    "rokProdukcji" : 2013,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4129440764920548",
+    "producent" : null,
+    "marka" : "VOLVO",
+    "model" : "V70",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "2852443883690980",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "CADDY",
+    "rokProdukcji" : 2019,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8014674503455397",
+    "producent" : null,
+    "marka" : "DACIA",
+    "model" : "SANDERO",
+    "rokProdukcji" : 2021,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7963708735767383",
+    "producent" : null,
+    "marka" : "MERCEDES-BENZ",
+    "model" : "CLA 250",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6961015245978051",
+    "producent" : null,
+    "marka" : "MERCEDES-BENZ",
+    "model" : "GLC 300",
+    "rokProdukcji" : 2016,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6954234138744918",
+    "producent" : null,
+    "marka" : "BMW",
+    "model" : "528I",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7493855248291552",
+    "producent" : null,
+    "marka" : "OPEL",
+    "model" : "VIVARO",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6566037829643790",
+    "producent" : null,
+    "marka" : "OPEL",
+    "model" : "GRANDLAND X",
+    "rokProdukcji" : 2017,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5763131244911133",
+    "producent" : null,
+    "marka" : "SCANIA",
+    "model" : "S500",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "CIĄGNIK SAMOCHODOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4923669980679174",
+    "producent" : null,
+    "marka" : "OPEL",
+    "model" : "VECTRA",
+    "rokProdukcji" : 2008,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4289704808048500",
+    "producent" : null,
+    "marka" : "LEXUS",
+    "model" : "LEXUS NX350H",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3574515952559668",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "CADDY",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1867972283508523",
+    "producent" : null,
+    "marka" : "RENAULT",
+    "model" : "T",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "CIĄGNIK SAMOCHODOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8569766015414547",
+    "producent" : null,
+    "marka" : "VOLVO",
+    "model" : "FH",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "CIĄGNIK SAMOCHODOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8628627242295662",
+    "producent" : null,
+    "marka" : "FIAT",
+    "model" : "DUCATO",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8282794728540738",
+    "producent" : null,
+    "marka" : "NISSAN",
+    "model" : "NISSAN QASHQAI",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5819444554414706",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "SPORTAGE",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5987551881405078",
+    "producent" : null,
+    "marka" : "TOYOTA",
+    "model" : "PRIUS PLUS",
+    "rokProdukcji" : 2012,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4900908046801844",
+    "producent" : null,
+    "marka" : "IVECO/TENSA",
+    "model" : "35S18",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "2867431627087356",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "SHARAN",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1945426517723828",
+    "producent" : null,
+    "marka" : "TOYOTA",
+    "model" : "COROLLA",
+    "rokProdukcji" : 2022,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3574515952559674",
+    "producent" : null,
+    "marka" : "ZETOR",
+    "model" : "7211",
+    "rokProdukcji" : 1989,
+    "typPojazdu" : "CIĄGNIK ROLNICZY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "136685462324796",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "TOURAN",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8995354603959654",
+    "producent" : null,
+    "marka" : "FORD",
+    "model" : "MONDEO",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5676811562736151",
+    "producent" : null,
+    "marka" : "OPEL",
+    "model" : "CORSA",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "4266422424750324",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "CARAVELLE",
+    "rokProdukcji" : 2007,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "3574515952559675",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "STINGER",
+    "rokProdukcji" : 2019,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1019510007818204",
+    "producent" : null,
+    "marka" : "AUDI",
+    "model" : "A5 SPORTBACK 2.0 TFSI",
+    "rokProdukcji" : 2019,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "555169796411578",
+    "producent" : null,
+    "marka" : "FIAT",
+    "model" : "DUCATO",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "SAMOCHÓD CIĘŻAROWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8631429754830306",
+    "producent" : null,
+    "marka" : "FIAT",
+    "model" : "600",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8333158114364276",
+    "producent" : null,
+    "marka" : "NISSAN",
+    "model" : "NOTE",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8569766015414581",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "STONIC",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8569766015414580",
+    "producent" : null,
+    "marka" : "AUDI",
+    "model" : "A5 AVANT",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8507067072799443",
+    "producent" : null,
+    "marka" : "ROMET MOTORS",
+    "model" : "TANK 125",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8564391558921270",
+    "producent" : null,
+    "marka" : "ORTHAUS",
+    "model" : "LSJ",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "NACZEPA CIĘŻAROWA",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : null,
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8373848406936661",
+    "producent" : null,
+    "marka" : "RYDWAN",
+    "model" : "EURO, B2600",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "PRZYCZEPA CIĘŻAROWA",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : null,
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8477187604704936",
+    "producent" : null,
+    "marka" : "CITROEN",
+    "model" : "C4 CACTUS",
+    "rokProdukcji" : 2014,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8631429754830330",
+    "producent" : null,
+    "marka" : "VOLKSWAGEN",
+    "model" : "T-CROSS",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8764400495624992",
+    "producent" : null,
+    "marka" : "PEUGEOT",
+    "model" : "3008",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8764400495624990",
+    "producent" : null,
+    "marka" : "RYDWAN",
+    "model" : "EURO, A1300",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "PRZYCZEPA CIĘŻAROWA",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : null,
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8789275378475787",
+    "producent" : null,
+    "marka" : "SKODA",
+    "model" : "OCTAVIA",
+    "rokProdukcji" : 2010,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8232976337180604",
+    "producent" : null,
+    "marka" : "PEUGEOT",
+    "model" : "308",
+    "rokProdukcji" : 2015,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8144062245861138",
+    "producent" : null,
+    "marka" : "SUZUKI",
+    "model" : "V-STROM 1000",
+    "rokProdukcji" : 2017,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8208427393973420",
+    "producent" : null,
+    "marka" : "CLAAS",
+    "model" : "ARES 816 RZ",
+    "rokProdukcji" : 2006,
+    "typPojazdu" : "CIĄGNIK ROLNICZY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7958997710257971",
+    "producent" : null,
+    "marka" : "AUDI",
+    "model" : "A4",
+    "rokProdukcji" : 2012,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "8006802252858187",
+    "producent" : null,
+    "marka" : "ACEKO",
+    "model" : "V2",
+    "rokProdukcji" : 1999,
+    "typPojazdu" : "PRZYCZEPA CIĘŻAROWA",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : null,
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7673876969306659",
+    "producent" : null,
+    "marka" : "AUDI",
+    "model" : "A7",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7710893382259580",
+    "producent" : null,
+    "marka" : "HYUNDAI",
+    "model" : "TUCSON",
+    "rokProdukcji" : 2016,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7764189289493200",
+    "producent" : null,
+    "marka" : "TOYOTA",
+    "model" : "AVENSIS",
+    "rokProdukcji" : 2017,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7441355344607733",
+    "producent" : null,
+    "marka" : "MERCEDES-BENZ",
+    "model" : "E 220 D",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7441355344607719",
+    "producent" : null,
+    "marka" : "TOYOTA",
+    "model" : "TOYOTA C-HR",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7474652904379757",
+    "producent" : null,
+    "marka" : "CITROEN",
+    "model" : "C4 PICASSO 2.0 HDI MCP",
+    "rokProdukcji" : 2009,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "OLEJ NAPĘDOWY",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7607182080088966",
+    "producent" : null,
+    "marka" : "FIAT",
+    "model" : "PUNTO",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "7251996705703754",
+    "producent" : null,
+    "marka" : "BMW",
+    "model" : "R 1200 GS",
+    "rokProdukcji" : 2018,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  } ]
+}

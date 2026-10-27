@@ -1,0 +1,27 @@
+{
+  "zrodlo" : "https://api.cepik.gov.pl/pojazdy?wojewodztwo=10&data-od=20260101&data-do=20260110&limit=100",
+  "dataPrzetwarzania" : "2026-10-25T22:13:31.460168800",
+  "pobrano" : 100,
+  "poprawne" : 96,
+  "odrzucone" : 4,
+  "duplikaty" : 0,
+  "zapisano" : 96,
+  "polaWystepujace" : {
+    "marka" : 100,
+    "kategoria-pojazdu" : 100,
+    "typ" : 100,
+    "model" : 100,
+    "wariant" : 100,
+    "rodzaj-pojazdu" : 100,
+    "pochodzenie-pojazdu" : 100,
+    "rok-produkcji" : 100,
+    "data-pierwszej-rejestracji-w-kraju" : 100,
+    "pojemnosc-skokowa-silnika" : 100,
+    "masa-wlasna" : 100,
+    "rodzaj-paliwa" : 100,
+    "wojewodztwo-kod" : 100
+  },
+  "powodyOdrzucenia" : {
+    "Brak marki" : 4
+  }
+}
