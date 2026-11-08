@@ -27,11 +27,15 @@ public class CepikApiClient {
     private static final ObjectMapper MAPPER = new ObjectMapper()
             .enable(SerializationFeature.INDENT_OUTPUT);
 
+    private static final ObjectMapper NDJSON_MAPPER = new ObjectMapper();
+
     private static final int MAX_PROB = 3;
 
     private static final Path KATALOG_WYJSCIOWY = Path.of("output");
     private static final Path PLIK_DANYCH =
             KATALOG_WYJSCIOWY.resolve("pojazdy-oczyszczone.json");
+    private static final Path PLIK_ELASTICSEARCH =
+            KATALOG_WYJSCIOWY.resolve("pojazdy-elasticsearch.ndjson");
     private static final Path PLIK_RAPORTU =
             KATALOG_WYJSCIOWY.resolve("raport-przetwarzania.json");
 
@@ -217,6 +221,16 @@ public class CepikApiClient {
             MAPPER.writeValue(PLIK_DANYCH.toFile(), zbior);
             MAPPER.writeValue(PLIK_RAPORTU.toFile(), raport);
 
+            // Zapis danych w formacie NDJSON dla Elasticsearch/Kibany.
+            try (java.io.BufferedWriter writer =
+                         Files.newBufferedWriter(PLIK_ELASTICSEARCH)) {
+
+                for (Vehicle pojazd : zbior.pojazdy) {
+                    writer.write(NDJSON_MAPPER.writeValueAsString(pojazd));
+                    writer.newLine();
+                }
+            }
+
             // Wyświetlamy tylko podsumowanie, nie wszystkie rekordy.
             System.out.println("\n===== PODSUMOWANIE =====");
             System.out.println("Pobrano:     " + raport.pobrano);
@@ -228,6 +242,7 @@ public class CepikApiClient {
             System.out.println("\nPliki zapisano w:");
             System.out.println(PLIK_DANYCH.toAbsolutePath());
             System.out.println(PLIK_RAPORTU.toAbsolutePath());
+            System.out.println("Plik NDJSON dla Elasticsearch: " + PLIK_ELASTICSEARCH.toAbsolutePath());
 
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

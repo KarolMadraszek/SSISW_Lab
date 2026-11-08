@@ -1,12 +1,42 @@
 {
   "zrodlo" : "CEPiK",
-  "dataPrzetwarzania" : "2026-10-25T22:13:31.457169400",
+  "dataPrzetwarzania" : "2026-11-08T19:35:59.605037900",
   "pojazdy" : [ {
     "id" : "5366335835140143",
     "producent" : null,
     "marka" : "JEEP",
     "model" : "GRAND CHEROKEE",
     "rokProdukcji" : 2023,
+    "typPojazdu" : "SAMOCHÓD OSOBOWY",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "6146907242581367",
+    "producent" : null,
+    "marka" : "YAMAHA",
+    "model" : "XV1900",
+    "rokProdukcji" : 2011,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "5744305099414143",
+    "producent" : null,
+    "marka" : "YAMAHA",
+    "model" : "XTZ690",
+    "rokProdukcji" : 2025,
+    "typPojazdu" : "MOTOCYKL",
+    "typNadwozia" : null,
+    "rodzajPaliwa" : "BENZYNA",
+    "pojemnoscSilnika" : null
+  }, {
+    "id" : "1545982664317623",
+    "producent" : null,
+    "marka" : "KIA",
+    "model" : "PICANTO",
+    "rokProdukcji" : 2012,
     "typPojazdu" : "SAMOCHÓD OSOBOWY",
     "typNadwozia" : null,
     "rodzajPaliwa" : "BENZYNA",
@@ -37,16 +67,6 @@
     "marka" : "YAMAHA",
     "model" : "VP250",
     "rokProdukcji" : 2008,
-    "typPojazdu" : "MOTOCYKL",
-    "typNadwozia" : null,
-    "rodzajPaliwa" : "BENZYNA",
-    "pojemnoscSilnika" : null
-  }, {
-    "id" : "6146907242581367",
-    "producent" : null,
-    "marka" : "YAMAHA",
-    "model" : "XV1900",
-    "rokProdukcji" : 2011,
     "typPojazdu" : "MOTOCYKL",
     "typNadwozia" : null,
     "rodzajPaliwa" : "BENZYNA",
@@ -940,26 +960,6 @@
     "typPojazdu" : "SAMOCHÓD OSOBOWY",
     "typNadwozia" : null,
     "rodzajPaliwa" : "OLEJ NAPĘDOWY",
-    "pojemnoscSilnika" : null
-  }, {
-    "id" : "7607182080088966",
-    "producent" : null,
-    "marka" : "FIAT",
-    "model" : "PUNTO",
-    "rokProdukcji" : 2011,
-    "typPojazdu" : "SAMOCHÓD OSOBOWY",
-    "typNadwozia" : null,
-    "rodzajPaliwa" : "BENZYNA",
-    "pojemnoscSilnika" : null
-  }, {
-    "id" : "7251996705703754",
-    "producent" : null,
-    "marka" : "BMW",
-    "model" : "R 1200 GS",
-    "rokProdukcji" : 2018,
-    "typPojazdu" : "MOTOCYKL",
-    "typNadwozia" : null,
-    "rodzajPaliwa" : "BENZYNA",
     "pojemnoscSilnika" : null
   } ]
 }
