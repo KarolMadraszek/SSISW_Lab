@@ -43,7 +43,7 @@ public class CepikApiClient {
         String wojewodztwo = "10";
         String dataOd = "20260101";
         String dataDo = "20260110";
-        String limit = "100";
+        String limit = "400";
 
         String url = String.format(
                 "https://api.cepik.gov.pl/pojazdy?wojewodztwo=%s&data-od=%s&data-do=%s&limit=%s",

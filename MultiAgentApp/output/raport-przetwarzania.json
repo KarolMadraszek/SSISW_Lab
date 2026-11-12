@@ -1,27 +1,27 @@
 {
-  "zrodlo" : "https://api.cepik.gov.pl/pojazdy?wojewodztwo=10&data-od=20260101&data-do=20260110&limit=100",
-  "dataPrzetwarzania" : "2026-11-08T19:35:59.607038",
-  "pobrano" : 100,
-  "poprawne" : 96,
-  "odrzucone" : 4,
+  "zrodlo" : "https://api.cepik.gov.pl/pojazdy?wojewodztwo=10&data-od=20260101&data-do=20260110&limit=400",
+  "dataPrzetwarzania" : "2026-11-10T07:46:20.744796400",
+  "pobrano" : 400,
+  "poprawne" : 383,
+  "odrzucone" : 17,
   "duplikaty" : 0,
-  "zapisano" : 96,
+  "zapisano" : 383,
   "polaWystepujace" : {
-    "marka" : 100,
-    "kategoria-pojazdu" : 100,
-    "typ" : 100,
-    "model" : 100,
-    "wariant" : 100,
-    "rodzaj-pojazdu" : 100,
-    "pochodzenie-pojazdu" : 100,
-    "rok-produkcji" : 100,
-    "data-pierwszej-rejestracji-w-kraju" : 100,
-    "pojemnosc-skokowa-silnika" : 100,
-    "masa-wlasna" : 100,
-    "rodzaj-paliwa" : 100,
-    "wojewodztwo-kod" : 100
+    "marka" : 400,
+    "kategoria-pojazdu" : 400,
+    "typ" : 400,
+    "model" : 400,
+    "wariant" : 400,
+    "rodzaj-pojazdu" : 400,
+    "pochodzenie-pojazdu" : 400,
+    "rok-produkcji" : 400,
+    "data-pierwszej-rejestracji-w-kraju" : 400,
+    "pojemnosc-skokowa-silnika" : 400,
+    "masa-wlasna" : 400,
+    "rodzaj-paliwa" : 400,
+    "wojewodztwo-kod" : 400
   },
   "powodyOdrzucenia" : {
-    "Brak marki" : 4
+    "Brak marki" : 17
   }
 }

@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1e100a-0013-4942-80c3-a81a897bdc4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/BuyerAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/DataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/MainContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/SellerAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/pojazdy-elasticsearch.ndjson" beforeDir="false" afterPath="$PROJECT_DIR$/output/pojazdy-elasticsearch.ndjson" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/pojazdy-oczyszczone.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/pojazdy-oczyszczone.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/raport-przetwarzania.json" beforeDir="false" afterPath="$PROJECT_DIR$/output/raport-przetwarzania.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/multiagentapp/CepikApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/multiagentapp/CepikApiClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +108,7 @@
   &quot;keyToString&quot;: {
     &quot;Application.CepikApi.executor&quot;: &quot;Run&quot;,
     &quot;Application.CepikApiClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainContainer.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -111,7 +119,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Magisterka/SSISW_Lab/MultiAgentApp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/STUDIA/Semestr 2 mgr/Sieci społecznościowe i systemy wieloagentowe [W]/zachowania_jade&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -126,7 +134,7 @@
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainContainer">
     <configuration name="CepikApiClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.multiagentapp.CepikApiClient" />
       <module name="MultiAgentApp" />
@@ -140,19 +148,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainContainer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.multiagentapp.MainContainer" />
+      <module name="MultiAgentApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.multiagentapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainContainer" />
         <item itemvalue="Application.CepikApiClient" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
