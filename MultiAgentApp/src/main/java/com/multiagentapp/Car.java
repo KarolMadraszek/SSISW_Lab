@@ -49,4 +49,12 @@ public class Car implements Serializable {
         return String.format("ID: %s | %s %s (%s) | Silnik: %s %d cm3 | Rok: %d | Cena: %.0f PLN (+%.0f PLN)",
                 id, marka, model, typNadwozia, typSilnika, pojemnoscSilnika, rokProdukcji, cena, kosztDodatkowy);
     }
+
+    public void setId(String id) { this.id = id; }
+    public void setMarka(String marka) { this.marka = marka; }
+    public void setModel(String model) { this.model = model; }
+    public void setRokProdukcji(int rokProdukcji) { this.rokProdukcji = rokProdukcji; }
+    public void setCena(double cena) { this.cena = cena; }
+    public void setKosztDodatkowy(double kosztDodatkowy) { this.kosztDodatkowy = kosztDodatkowy; }
+    public void setMoc(String moc) { this.model = moc; }
 }

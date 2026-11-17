@@ -37,15 +37,39 @@ public class SellerAgent extends Agent {
                 if (msg != null) {
                     if (msg.getPerformative() == ACLMessage.CFP) {
                         ACLMessage reply = msg.createReply();
-                        if (!inventory.isEmpty()) {
-                            Car offeredCar = inventory.get(0);
+
+                        int minRequiredYear = 1975;
+                        try {
+                            if (msg.getContent() != null && !msg.getContent().isBlank()) {
+                                minRequiredYear = Integer.parseInt(msg.getContent().trim());
+                            }
+                        } catch (NumberFormatException ignored) {}
+
+                        Car bestMatchingCar = null;
+                        double lowestTotalCost = Double.MAX_VALUE;
+
+                        synchronized (inventory) {
+                            for (Car c : inventory) {
+                                if (c.getRokProdukcji() >= minRequiredYear) {
+                                    double totalCost = c.getCena() + c.getKosztDodatkowy();
+                                    if (totalCost < lowestTotalCost) {
+                                        lowestTotalCost = totalCost;
+                                        bestMatchingCar = c;
+                                    }
+                                }
+                            }
+                        }
+
+                        if (bestMatchingCar != null) {
                             reply.setPerformative(ACLMessage.PROPOSE);
                             try {
-                                reply.setContentObject(offeredCar);
-                            } catch (Exception e) { e.printStackTrace(); }
+                                reply.setContentObject(bestMatchingCar);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         } else {
                             reply.setPerformative(ACLMessage.REFUSE);
-                            reply.setContent("Brak samochodów");
+                            reply.setContent("Brak samochodu spełniającego wymagania (wymagany min. rok: " + minRequiredYear + ")");
                         }
                         send(reply);
 
@@ -72,7 +96,7 @@ public class SellerAgent extends Agent {
                             System.out.println("[" + getLocalName() + "] Sprzedano: " + carToSell.getId() + " dla " + msg.getSender().getLocalName());
                         } else {
                             reply.setPerformative(ACLMessage.FAILURE);
-                            reply.setContent("Niestety, to auto zostało przed chwilą sprzedane.");
+                            reply.setContent("Niestety, auto " + requestedCarId + " zostało już sprzedane.");
                         }
                         send(reply);
                     }

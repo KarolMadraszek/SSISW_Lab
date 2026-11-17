@@ -125,7 +125,29 @@ public class DataService {
                     System.out.println(">>> [DEBUG] Sukces! Pobrano aut: " + list.size());
                 }
             } else {
-                System.out.println(">>> [DEBUG] Błąd HTTP: " + response.statusCode() + " | " + response.body());
+                System.out.println(">>> [BŁĄD API CEPiK] Kod: " + response.statusCode() + " - Serwery nie odpowiadają.");
+                System.out.println(">>> Generowanie danych zastępczych, aby agenci mogli handlować...");
+
+                List<Car> backupCars = new ArrayList<>();
+                Random rand = new Random();
+                String[] brands = {"TOYOTA", "SKODA", "VOLKSWAGEN", "KIA", "RENAULT"};
+
+                for (int i = 0; i < 8; i++) {
+                    Car c = new Car();
+                    c.setId("CAR-BACKUP-" + UUID.randomUUID().toString().substring(0, 5));
+                    c.setMarka(brands[rand.nextInt(brands.length)]);
+                    c.setModel("MODEL-" + (i + 1));
+
+                    int rok = 1995 + rand.nextInt(28);
+                    c.setRokProdukcji(rok);
+
+                    c.setCena(Math.max(3000.0, 5000 + (rok - 1975) * 2000 + rand.nextInt(5000)));
+                    c.setKosztDodatkowy(1000 + rand.nextInt(4000));
+                    c.setMoc(String.valueOf(90 + rand.nextInt(161)));
+
+                    backupCars.add(c);
+                }
+                return backupCars;
             }
         } catch (Exception e) {
             System.out.println(">>> [DEBUG] WYJĄTEK SIECIOWY JAVY: " + e.toString());
