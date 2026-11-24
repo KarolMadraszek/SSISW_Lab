@@ -8,6 +8,7 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
+
 import java.util.*;
 
 public class BuyerAgent extends Agent {
@@ -133,16 +134,8 @@ public class BuyerAgent extends Agent {
                             ACLMessage confirm = myAgent.blockingReceive(mt, 2000);
                             if (confirm != null) {
                                 if (confirm.getPerformative() == ACLMessage.INFORM) {
-                                    budget -= bestTotalCost;
                                     purchasedCount++;
-                                    failedRounds = 0;
-
-                                    synchronized (System.out) {
-                                        System.out.println("+++ [" + getLocalName() + "] Kupiono " + bestCar.getId()
-                                                + " (" + bestCar.getMarka() + " " + bestCar.getModel() + ") za "
-                                                + Math.round(bestTotalCost) + " PLN | Pozostały budżet: "
-                                                + Math.round(budget) + " PLN (" + purchasedCount + "/" + TARGET_PURCHASES + ")");
-                                    }
+                                    System.out.println("+++ [" + getLocalName() + "] Kupiono auto (" + purchasedCount + "/3): " + bestCar.getMarka() + " " + bestCar.getModel() + " (Koszt całkowity: " + Math.round(bestTotalCost) + " PLN)");
 
                                     Map<String, Object> tx = new HashMap<>();
                                     tx.put("buyer", getLocalName());
@@ -153,17 +146,13 @@ public class BuyerAgent extends Agent {
                                     tx.put("cena", bestCar.getCena());
                                     tx.put("kosztDodatkowy", bestCar.getKosztDodatkowy());
                                     tx.put("totalCost", bestTotalCost);
-                                    tx.put("remainingBudget", budget);
                                     tx.put("timestamp", new Date());
                                     DataService.sendToElastic("transactions", UUID.randomUUID().toString(), tx);
-
                                 } else if (confirm.getPerformative() == ACLMessage.FAILURE) {
-                                    synchronized (System.out) {
-                                        System.out.println("--- [" + getLocalName() + "] Nie udało się kupić "
-                                                + bestCar.getId() + ": " + confirm.getContent());
-                                    }
+                                    System.out.println("--- [" + getLocalName() + "] Nie udało się kupić auta: " + confirm.getContent());
                                 }
                             }
+
                         } else {
                             failedRounds++;
                             synchronized (System.out) {
@@ -172,7 +161,9 @@ public class BuyerAgent extends Agent {
                             }
                         }
                     }
+
                 } catch (Exception e) {
+
                     e.printStackTrace();
                 }
             }
