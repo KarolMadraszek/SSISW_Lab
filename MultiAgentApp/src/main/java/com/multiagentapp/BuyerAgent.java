@@ -13,17 +13,34 @@ import java.util.*;
 public class BuyerAgent extends Agent {
     private int purchasedCount = 0;
     private static final int TARGET_PURCHASES = 3;
+    private double budget = 100000.0;
+    private int failedRounds = 0;
+    private static final int MAX_FAILED_ROUNDS = 5;
     private final Random rand = new Random();
 
     @Override
     protected void setup() {
-        System.out.println(getLocalName() + " rozpoczyna poszukiwania (cel: 3 samochody).");
+        Object[] args = getArguments();
+        if (args != null && args.length > 0 && args[0] instanceof Number) {
+            this.budget = ((Number) args[0]).doubleValue();
+        }
+
+        System.out.println(getLocalName() + " rozpoczyna poszukiwania (cel: " + TARGET_PURCHASES
+                + " auta, budżet: " + Math.round(budget) + " PLN).");
 
         addBehaviour(new TickerBehaviour(this, 4000) {
             @Override
             protected void onTick() {
                 if (purchasedCount >= TARGET_PURCHASES) {
-                    System.out.println(">>> " + getLocalName() + " zakupił komplet 3 samochodów i kończy działanie.");
+                    System.out.println(">>> " + getLocalName() + " zakupił komplet " + TARGET_PURCHASES
+                            + " samochodów (pozostały budżet: " + Math.round(budget) + " PLN) i kończy działanie.");
+                    stop();
+                    return;
+                }
+
+                if (failedRounds >= MAX_FAILED_ROUNDS) {
+                    System.out.println(">>> " + getLocalName() + " kończy działanie — brak dostępnych aut w budżecie ("
+                            + Math.round(budget) + " PLN). Kupiono: " + purchasedCount + "/" + TARGET_PURCHASES);
                     stop();
                     return;
                 }
@@ -47,8 +64,6 @@ public class BuyerAgent extends Agent {
                         cfp.setContent(String.valueOf(requiredMinYear));
                         myAgent.send(cfp);
 
-                        System.out.println("\n[" + getLocalName() + "] Wysłano zapytanie o auto (min. rocznik: " + requiredMinYear + ")");
-
                         Car bestCar = null;
                         AID bestSeller = null;
                         double bestTotalCost = Double.MAX_VALUE;
@@ -61,16 +76,39 @@ public class BuyerAgent extends Agent {
 
                             if (reply.getPerformative() == ACLMessage.PROPOSE) {
                                 Car offeredCar = (Car) reply.getContentObject();
-
                                 double cena = offeredCar.getCena();
                                 double kosztDodatkowy = offeredCar.getKosztDodatkowy();
                                 double kosztCalkowity = cena + kosztDodatkowy;
 
-                                System.out.println("Oferta od " + reply.getSender().getLocalName() + " (" + offeredCar.getMarka() + " " + offeredCar.getModel() + ", rok " + offeredCar.getRokProdukcji() + "):");
-                                System.out.println("Cena: " + Math.round(cena) + " PLN");
-                                System.out.println("Koszt dodatkowy: " + Math.round(kosztDodatkowy) + " PLN");
-                                System.out.println("-----------------------");
-                                System.out.println("Koszt całkowity: " + Math.round(kosztCalkowity) + " PLN\n");
+                                StringBuilder offerLog = new StringBuilder();
+                                offerLog.append("\n[").append(getLocalName()).append("] Oferta od ")
+                                        .append(reply.getSender().getLocalName())
+                                        .append(" (").append(offeredCar.getId()).append(" - ")
+                                        .append(offeredCar.getMarka()).append(" ").append(offeredCar.getModel())
+                                        .append(", rok ").append(offeredCar.getRokProdukcji()).append("):\n")
+                                        .append("[").append(getLocalName()).append("] Cena: ").append(Math.round(cena)).append(" PLN\n")
+                                        .append("[").append(getLocalName()).append("] Koszt dodatkowy: ").append(Math.round(kosztDodatkowy)).append(" PLN\n")
+                                        .append("[").append(getLocalName()).append("] -----------------------\n")
+                                        .append("[").append(getLocalName()).append("] Koszt całkowity: ").append(Math.round(kosztCalkowity)).append(" PLN");
+
+                                synchronized (System.out) {
+                                    System.out.println(offerLog.toString());
+                                }
+
+                                if (kosztCalkowity > budget) {
+                                    StringBuilder rejectLog = new StringBuilder();
+                                    rejectLog.append("\n[").append(getLocalName()).append("] ODRZUCONO ofertę (przekroczony budżet) - ")
+                                            .append(offeredCar.getId()).append(" (").append(offeredCar.getMarka()).append(" ").append(offeredCar.getModel()).append("):\n")
+                                            .append("Budżet: ").append(Math.round(budget)).append(" PLN\n")
+                                            .append("Cena: ").append(Math.round(cena)).append(" PLN\n")
+                                            .append("Opłaty: ").append(Math.round(kosztDodatkowy)).append(" PLN\n")
+                                            .append("-----------------------\n")
+                                            .append("Razem: ").append(Math.round(kosztCalkowity)).append(" PLN (Za drogo!)");
+                                    synchronized (System.out) {
+                                        System.out.println(rejectLog.toString());
+                                    }
+                                    continue;
+                                }
 
                                 if (kosztCalkowity < bestTotalCost) {
                                     bestTotalCost = kosztCalkowity;
@@ -78,13 +116,14 @@ public class BuyerAgent extends Agent {
                                     bestSeller = reply.getSender();
                                 }
                             } else if (reply.getPerformative() == ACLMessage.REFUSE) {
-                                System.out.println("[" + reply.getSender().getLocalName() + "] Odmowa: " + reply.getContent());
+                                synchronized (System.out) {
+                                    System.out.println("[" + getLocalName() + "] Odmowa od "
+                                            + reply.getSender().getLocalName() + ": " + reply.getContent());
+                                }
                             }
                         }
 
                         if (bestCar != null && bestSeller != null) {
-                            System.out.println("[" + getLocalName() + "] Wybrano najkorzystniejszą ofertę od " + bestSeller.getLocalName() + " za " + Math.round(bestTotalCost) + " PLN.");
-
                             ACLMessage accept = new ACLMessage(ACLMessage.ACCEPT_PROPOSAL);
                             accept.addReceiver(bestSeller);
                             accept.setConversationId(convId);
@@ -94,8 +133,16 @@ public class BuyerAgent extends Agent {
                             ACLMessage confirm = myAgent.blockingReceive(mt, 2000);
                             if (confirm != null) {
                                 if (confirm.getPerformative() == ACLMessage.INFORM) {
+                                    budget -= bestTotalCost;
                                     purchasedCount++;
-                                    System.out.println("+++ [" + getLocalName() + "] Kupiono auto (" + purchasedCount + "/3): " + bestCar.getMarka() + " " + bestCar.getModel() + " (Koszt całkowity: " + Math.round(bestTotalCost) + " PLN)");
+                                    failedRounds = 0;
+
+                                    synchronized (System.out) {
+                                        System.out.println("+++ [" + getLocalName() + "] Kupiono " + bestCar.getId()
+                                                + " (" + bestCar.getMarka() + " " + bestCar.getModel() + ") za "
+                                                + Math.round(bestTotalCost) + " PLN | Pozostały budżet: "
+                                                + Math.round(budget) + " PLN (" + purchasedCount + "/" + TARGET_PURCHASES + ")");
+                                    }
 
                                     Map<String, Object> tx = new HashMap<>();
                                     tx.put("buyer", getLocalName());
@@ -106,14 +153,23 @@ public class BuyerAgent extends Agent {
                                     tx.put("cena", bestCar.getCena());
                                     tx.put("kosztDodatkowy", bestCar.getKosztDodatkowy());
                                     tx.put("totalCost", bestTotalCost);
+                                    tx.put("remainingBudget", budget);
                                     tx.put("timestamp", new Date());
                                     DataService.sendToElastic("transactions", UUID.randomUUID().toString(), tx);
+
                                 } else if (confirm.getPerformative() == ACLMessage.FAILURE) {
-                                    System.out.println("--- [" + getLocalName() + "] Nie udało się kupić auta: " + confirm.getContent());
+                                    synchronized (System.out) {
+                                        System.out.println("--- [" + getLocalName() + "] Nie udało się kupić "
+                                                + bestCar.getId() + ": " + confirm.getContent());
+                                    }
                                 }
                             }
                         } else {
-                            System.out.println("[" + getLocalName() + "] Żaden sprzedawca nie posiadał auta spełniającego wymagania w tej rundzie.");
+                            failedRounds++;
+                            synchronized (System.out) {
+                                System.out.println("[" + getLocalName() + "] Brak ofert mieszczących się w budżecie ("
+                                        + Math.round(budget) + " PLN) i kryteriach w tej rundzie.");
+                            }
                         }
                     }
                 } catch (Exception e) {

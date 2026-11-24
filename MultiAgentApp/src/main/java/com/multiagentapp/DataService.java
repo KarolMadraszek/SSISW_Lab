@@ -143,7 +143,7 @@ public class DataService {
 
                     c.setCena(Math.max(3000.0, 5000 + (rok - 1975) * 2000 + rand.nextInt(5000)));
                     c.setKosztDodatkowy(1000 + rand.nextInt(4000));
-                    c.setMoc(String.valueOf(90 + rand.nextInt(161)));
+                    c.setMoc(90 + rand.nextInt(161));
 
                     backupCars.add(c);
                 }

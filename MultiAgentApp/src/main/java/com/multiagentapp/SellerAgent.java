@@ -96,7 +96,7 @@ public class SellerAgent extends Agent {
                             System.out.println("[" + getLocalName() + "] Sprzedano: " + carToSell.getId() + " dla " + msg.getSender().getLocalName());
                         } else {
                             reply.setPerformative(ACLMessage.FAILURE);
-                            reply.setContent("Niestety, auto " + requestedCarId + " zostało już sprzedane.");
+                            reply.setContent("SAMOCHÓD NIEDOSTĘPNY");
                         }
                         send(reply);
                     }

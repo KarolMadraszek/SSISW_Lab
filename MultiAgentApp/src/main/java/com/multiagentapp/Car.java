@@ -56,5 +56,5 @@ public class Car implements Serializable {
     public void setRokProdukcji(int rokProdukcji) { this.rokProdukcji = rokProdukcji; }
     public void setCena(double cena) { this.cena = cena; }
     public void setKosztDodatkowy(double kosztDodatkowy) { this.kosztDodatkowy = kosztDodatkowy; }
-    public void setMoc(String moc) { this.model = moc; }
+    public void setMoc(int moc) { this.moc = moc; }
 }
